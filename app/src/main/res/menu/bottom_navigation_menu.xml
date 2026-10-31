@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_navigation_home"
+        android:icon="@drawable/home_logo"
+        android:title="Beranda"
+        app:cnb_iconColor="#FFFFFF"/>
+
+    <item
+        android:id="@+id/rideshare"
+        android:title="Riwayat"
+        android:icon="@drawable/calendar"
+        app:cnb_iconColor="#FFFFFF"/>
+
+    <item
+        android:id="@+id/profiletab"
+        android:title="Akun Saya"
+        android:icon="@drawable/user"
+        app:cnb_iconColor="#FFFFFF"/>
+</menu>
