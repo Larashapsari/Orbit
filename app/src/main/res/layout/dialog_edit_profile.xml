@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#EFF6FF">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_edit_pencil"
+                    app:tint="@color/colorPrimary" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profil"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_primary"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perbarui data informasi akun Anda"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:fontFamily="@font/poppins" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 1. Nama Lengkap -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etEditProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_field_bg"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:hint="Masukkan nama lengkap"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="14dp" />
+
+        <!-- 2. Nomor HP / WhatsApp -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telepon / WhatsApp"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etEditProfilePhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_field_bg"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:hint="Contoh: 081234567890"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:inputType="phone"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Hidden compat field for bus route if needed -->
+        <EditText
+            android:id="@+id/etEditProfileBusRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelEditProfile"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Batal"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAllCaps="false"
+                android:layout_marginEnd="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Simpan Perubahan"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="24dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

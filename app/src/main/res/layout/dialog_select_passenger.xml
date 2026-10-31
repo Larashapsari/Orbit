@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/offwhitecard"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="24dp">
+
+    <!-- DRAG HANDLE -->
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:background="@color/divider"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp" />
+
+    <!-- HEADER BAR: CLOSE BTN & TITLE -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/btnClosePassenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✕"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Penumpang"
+            android:textSize="17sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ROW 1: DEWASA -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dewasa"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Di atas 3 tahun"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- Counter Box Adult -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/filter_chip_bg"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnMinusAdult"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="−"
+                android:textSize="18sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tvCountAdult"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/btnPlusAdult"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:background="@drawable/round_corner_bgblue" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ROW 2: BAYI -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayi"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umur 1 - 3 tahun (Gratis)"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- Counter Box Infant -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/filter_chip_bg"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnMinusInfant"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="−"
+                android:textSize="18sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tvCountInfant"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/btnPlusInfant"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:background="@drawable/round_corner_bgblue" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- INFO CARD: KETENTUAN PENUMPANG BAYI -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#F1F5F9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/info"
+                    app:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ketentuan Penumpang Bayi"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_primary"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•  Umur 1 - 3 tahun tidak dikenakan biaya tiket (Gratis)."
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="@font/poppins" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•  Anak di atas 3 tahun dihitung sebagai tiket Dewasa."
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•  Tidak dapat melebihi jumlah penumpang dewasa."
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Informasi Selengkapnya"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- SAVE BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSavePassenger"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Simpan"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="26dp" />
+
+</LinearLayout>
