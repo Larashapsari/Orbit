@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== ORBIT — Gen Z Modern Palette ===== -->
+
+    <!-- Primary brand -->
+    <color name="colorPrimary">#2563EB</color>
+    <color name="colorPrimaryDark">#1D4ED8</color>
+    <color name="colorAccent">#38BDF8</color>
+
+    <!-- Gen Z Gradient stops -->
+    <color name="grad_start">#1E40AF</color>
+    <color name="grad_end">#7C3AED</color>
+    <color name="grad_mid">#2563EB</color>
+
+    <!-- Brand aliases (backward compat) -->
+    <color name="cosmic_ink">#0F172A</color>
+    <color name="twilight_plum">#7C3AED</color>
+    <color name="deep_sky">#2563EB</color>
+    <color name="milky_glow">#BAE6FD</color>
+    <color name="cloud_mist">#EFF6FF</color>
+
+    <!-- Neutrals -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_on_dark">#FFFFFF</color>
+    <color name="background_light">#F1F5F9</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#E2E8F0</color>
+
+    <!-- Seat colors — beda state beda warna -->
+    <color name="seat_available">#2563EB</color>
+    <color name="seat_booked">#CBD5E1</color>
+    <color name="seat_selected">#7C3AED</color>
+    <color name="seat_unavailable">#94A3B8</color>
+
+    <!-- Status -->
+    <color name="success_green">#10B981</color>
+    <color name="error_red">#EF4444</color>
+    <color name="warning_amber">#F59E0B</color>
+
+    <!-- Surface / Glass -->
+    <color name="surface_elevated">#FFFFFF</color>
+    <color name="chip_selected_bg">#EEF2FF</color>
+    <color name="chip_selected_text">#4338CA</color>
+
+    <!-- Legacy compat — nama diperbaiki -->
+    <color name="blue">#2563EB</color>
+    <color name="red_primary">#EF4444</color>
+    <color name="green_primary">#10B981</color>
+    <color name="orange_promo">#F59E0B</color>
+</resources>
