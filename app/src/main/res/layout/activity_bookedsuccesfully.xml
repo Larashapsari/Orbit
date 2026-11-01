@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/background_light"
+    android:padding="24dp"
+    tools:context="orbit.ac.id.bookedsuccesfully">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- SUCCESS BADGE ICON -->
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/badge_green_bg"
+                android:padding="18dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_reply_24"
+                    android:rotation="180"
+                    app:tint="#059669" />
+            </FrameLayout>
+
+            <!-- SUCCESS MESSAGE TITLE & SUBTITLE -->
+            <TextView
+                android:id="@+id/tvSuccessTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pesanan Berhasil!"
+                android:textSize="22sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:id="@+id/seatsucessmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Tiket Berhasil Dipesan!\nNomor Kursi: 01 | Rute: SB1"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center" />
+
+            <!-- TICKET DETAILS CARD MATCHING MOCKUP -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentStart="true">
+
+                            <TextView
+                                android:id="@+id/operatorNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sinar Jaya"
+                                android:textSize="17sp"
+                                android:textColor="@color/text_primary"
+                                android:fontFamily="@font/poppins_bold" />
+
+                            <TextView
+                                android:id="@+id/busClassText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Executive Class"
+                                android:textSize="12sp"
+                                android:textColor="@color/text_secondary"
+                                android:fontFamily="@font/poppins" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/busfront"
+                            android:scaleType="fitCenter" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- TRIP DETAILS -->
+                    <TextView
+                        android:id="@+id/routeTripText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pulo Gebang → Bandung"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:fontFamily="@font/poppins_semibold" />
+
+                    <TextView
+                        android:id="@+id/tripDateScheduleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sab, 25 Okt 2025  •  07:00"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- BOOKING & SEAT INFO -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentStart="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No. Booking:"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:fontFamily="@font/poppins" />
+
+                            <TextView
+                                android:id="@+id/bookingCodeText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BJS782635"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/poppins_bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="end">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status:"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:fontFamily="@font/poppins" />
+
+                            <TextView
+                                android:id="@+id/statusText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Terkonfirmasi"
+                                android:textSize="13sp"
+                                android:textColor="#059669"
+                                android:fontFamily="@font/poppins_bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CASH PAYMENT NOTICE CARD (SHOWS FOR CASH) -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCashNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FEF3C7"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⏱  Informasi Tagihan Pembayaran Tunai (Loket)"
+                        android:textSize="13sp"
+                        android:textColor="#D97706"
+                        android:fontFamily="@font/poppins_bold" />
+
+                    <TextView
+                        android:id="@+id/cashNoticeDetailText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harap lakukan pembayaran tunai sebesar Rp 180.000 di loket resmi maksimal 30 menit sebelum jam keberangkatan bus (Pukul 06:30 WIB)."
+                        android:textSize="12sp"
+                        android:textColor="#92400E"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Hidden legacy elements for compatibility -->
+            <TextView
+                android:id="@+id/passengerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/seatNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/paymentMethodText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- ACTION BUTTON: KEMBALI KE BERANDA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gohome_succesbook"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="KEMBALI KE BERANDA"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            app:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="26dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/offwhitecard"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="24dp">
+
+    <!-- DRAG HANDLE -->
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:background="@color/divider"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barcode Pembayaran QRIS"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:fontFamily="@font/poppins_bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR di bawah menggunakan e-wallet / m-banking Anda"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:layout_marginTop="2dp" />
+
+    <!-- BARCODE / QR CODE CARD CONTAINER -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Standard QR Code Image -->
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/ic_baseline_directions_bus_24"
+                app:tint="@color/colorPrimary"
+                android:background="#F1F5F9"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QRIS ORBIT BUS"
+                android:textSize="11sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- TOTAL AMOUNT -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Pembayaran:"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 180.000"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/poppins_bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⏱  Selesaikan pembayaran dalam 15:00 menit"
+        android:textSize="11sp"
+        android:textColor="#D97706"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- DOWNLOAD QR BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCompleteQrPayment"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Download QR"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="26dp" />
+
+</LinearLayout>
